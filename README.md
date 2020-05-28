@@ -1,1 +1,1 @@
-# DataBaseSQl
+#JDBC - Java DataBase Connectivity

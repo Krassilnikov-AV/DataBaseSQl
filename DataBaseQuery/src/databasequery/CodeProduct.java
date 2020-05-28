@@ -61,7 +61,6 @@ public class CodeProduct {
             System.out.println("Ошибка создания ProductCode из Resultset");
         }
     }
-
     /**
      * Возвращает код товара
      *

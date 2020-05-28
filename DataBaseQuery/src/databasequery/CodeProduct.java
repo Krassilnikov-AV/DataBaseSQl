@@ -49,10 +49,7 @@ public class CodeProduct {
      * @param set {@link ResultSet}, полученный в результате запроса,
      * содержащего все поля таблицы PRODUCT_CODE базы данных Sample.
      */
-    private CodeProduct(ResultSet set) {
-        /*
-         * TODO #05 реализуйте конструктор класса CodeProduct
-         */
+    private CodeProduct(ResultSet set) {    
         try {
             code = set.getString("PROD_CODE");
             discountCode = set.getString("DISCOUNT_CODE").charAt(0);
@@ -61,65 +58,30 @@ public class CodeProduct {
             System.out.println("Ошибка создания ProductCode из Resultset");
         }
     }
-    /**
-     * Возвращает код товара
-     *
-     * @return Объект типа {@link String}
-     */
+   
     public String getCode() {
         return code;
     }
-
-    /**
-     * Устанавливает код товара
-     *
-     * @param code код товара
-     */
+  
     public void setCode(String code) {
         this.code = code;
     }
-
-    /**
-     * Возвращает код скидки
-     *
-     * @return Объект типа {@link String}
-     */
     public char getDiscountCode() {
         return discountCode;
     }
 
-    /**
-     * Устанавливает код скидки
-     *
-     * @param discountCode код скидки
-     */
     public void setDiscountCode(char discountCode) {
         this.discountCode = discountCode;
     }
 
-    /**
-     * Возвращает описание
-     *
-     * @return Объект типа {@link String}
-     */
-    public String getDescription() {
+     public String getDescription() {
         return description;
     }
 
-    /**
-     * Устанавливает описание
-     *
-     * @param description описание
-     */
-    public void setDescription(String description) {
+     public void setDescription(String description) {
         this.description = description;
     }
 
-    /**
-     * Хеш-функция типа {@link CodeProduct}.
-     *
-     * @return Значение хеш-кода объекта типа {@link CodeProduct}
-     */
     @Override
     public int hashCode() {
         /*

@@ -31,9 +31,7 @@ public class DataBaseQuery {
             code.save(connection);
             printAllCodes(connection);
         }
-        /*
-         * TODO #14 Средствами отладчика проверьте корректность работы программы
-         */
+      
     }
 
     /**
@@ -48,11 +46,7 @@ public class DataBaseQuery {
         }
     }
 
-    /**
-     * Возвращает URL, описывающий месторасположение базы данных
-     *
-     * @return URL в виде объекта класса {@link String}
-     */
+   
     private static String getUrl() {       
         String url = "jdbc:derby://localhost:1527/sample";
         System.out.println("есть url...");
